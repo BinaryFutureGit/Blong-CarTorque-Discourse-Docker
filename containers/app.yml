@@ -91,6 +91,8 @@ hooks:
           - git clone https://github.com/discourse/docker_manager.git
           - git clone https://github.com/angusmcleod/discourse-locations.git
           - git clone https://github.com/angusmcleod/discourse-events.git
+          - git clone https://github.com/hnb-ku/discourse-topic-excerpt-plugin.git
+          - git clone https://github.com/angusmcleod/discourse-topic-previews.git
 
 ## Any custom commands to run after building
 run:
