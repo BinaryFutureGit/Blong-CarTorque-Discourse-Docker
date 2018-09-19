@@ -93,7 +93,6 @@ hooks:
         cmd:
           - git clone https://github.com/discourse/docker_manager.git
           - git clone https://github.com/angusmcleod/discourse-locations.git
-          - git clone https://github.com/hnb-ku/discourse-topic-excerpt-plugin.git
           - git clone ssh://git@github.com/BinaryFutureGit/Blong-CarTorque-Discourse-topic-previews.git
           - git clone ssh://git@github.com/BinaryFutureGit/Blong-CarTorque-Discourse-Event.git
 
