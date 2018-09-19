@@ -80,6 +80,9 @@ volumes:
   - volume:
       host: /var/discourse/shared/standalone/log/var-log
       guest: /var/log
+  - volume:
+      host: /root/.ssh
+      guest: /root/.ssh
 
 ## Plugins go here
 ## see https://meta.discourse.org/t/19157 for details
@@ -92,7 +95,7 @@ hooks:
           - git clone https://github.com/angusmcleod/discourse-locations.git
           # - git clone https://github.com/angusmcleod/discourse-events.git
           - git clone https://github.com/hnb-ku/discourse-topic-excerpt-plugin.git
-          - git clone https://4f0727d1e1306201d02e048cb13d2165987ac2bd@github.com/BinaryFutureGit/Blong-CarTorque-Discourse-topic-previews.git
+          - git clone ssh://git@github.com/BinaryFutureGit/Blong-CarTorque-Discourse-topic-previews.git
 
 ## Any custom commands to run after building
 run:
