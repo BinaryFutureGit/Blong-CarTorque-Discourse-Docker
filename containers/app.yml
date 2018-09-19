@@ -12,7 +12,7 @@ templates:
   - "templates/redis.template.yml"
   - "templates/web.template.yml"
   - "templates/web.ratelimited.template.yml"
-## Uncomment these two lines if you wish to add Lets Encrypt (https)
+  ## Uncomment these two lines if you wish to add Lets Encrypt (https)
   - "templates/web.ssl.template.yml"
   - "templates/web.letsencrypt.ssl.template.yml"
 
@@ -20,7 +20,7 @@ templates:
 ## If you want Discourse to share a port with another webserver like Apache or nginx,
 ## see https://meta.discourse.org/t/17247 for details
 expose:
-  - "80:80"   # http
+  - "80:80" # http
   - "443:443" # https
 
 params:
@@ -54,7 +54,7 @@ env:
 
   ## TODO: List of comma delimited emails that will be made admin and developer
   ## on initial signup example 'user1@example.com,user2@example.com'
-  DISCOURSE_DEVELOPER_EMAILS: 'hello@blong.com.au'
+  DISCOURSE_DEVELOPER_EMAILS: "hello@blong.com.au"
 
   ## TODO: The SMTP mail server used to validate new accounts and send notifications
   # SMTP ADDRESS, username, and password are required
@@ -93,9 +93,9 @@ hooks:
         cmd:
           - git clone https://github.com/discourse/docker_manager.git
           - git clone https://github.com/angusmcleod/discourse-locations.git
-          # - git clone https://github.com/angusmcleod/discourse-events.git
           - git clone https://github.com/hnb-ku/discourse-topic-excerpt-plugin.git
-          - git clone ssh://git@github.com/BinaryFutureGit/Blong-CarTorque-Discourse-topic-previews.git
+          - git clone git@github.com/BinaryFutureGit/Blong-CarTorque-Discourse-topic-previews.git
+          - git clone git@github.com:BinaryFutureGit/Blong-CarTorque-Discourse-Event.git
 
 ## Any custom commands to run after building
 run:
