@@ -95,7 +95,7 @@ hooks:
           - git clone https://github.com/angusmcleod/discourse-locations.git
           - git clone https://github.com/hnb-ku/discourse-topic-excerpt-plugin.git
           - git clone ssh://git@github.com/BinaryFutureGit/Blong-CarTorque-Discourse-topic-previews.git
-          - git clone ssh://git@github.com:BinaryFutureGit/Blong-CarTorque-Discourse-Event.git
+          - git clone ssh://git@github.com/BinaryFutureGit/Blong-CarTorque-Discourse-Event.git
 
 ## Any custom commands to run after building
 run:
