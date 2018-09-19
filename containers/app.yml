@@ -34,7 +34,7 @@ params:
   #db_work_mem: "40MB"
 
   ## Which Git revision should this container use? (default: tests-passed)
-  #version: tests-passed
+  version: v2.1.0
 
 env:
   LANG: en_US.UTF-8
@@ -90,9 +90,9 @@ hooks:
         cmd:
           - git clone https://github.com/discourse/docker_manager.git
           - git clone https://github.com/angusmcleod/discourse-locations.git
-          - git clone https://github.com/angusmcleod/discourse-events.git
+          # - git clone https://github.com/angusmcleod/discourse-events.git
           - git clone https://github.com/hnb-ku/discourse-topic-excerpt-plugin.git
-          - git clone https://github.com/angusmcleod/discourse-topic-previews.git
+          - git clone https://4f0727d1e1306201d02e048cb13d2165987ac2bd@github.com/BinaryFutureGit/Blong-CarTorque-Discourse-topic-previews.git
 
 ## Any custom commands to run after building
 run:
